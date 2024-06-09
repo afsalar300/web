@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luminar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link  rel="icon" href="{% static 'luminar3.png' %}" type="image/x-icon">
+</head>
+<body>
+  <div>
+    <nav class="navbar bg-body-tertiary fixed-top" style="margin: auto; width:120%; background-color: white;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'luminar2.png' %}" alt="Bootstrap" width="260" height="70" style="margin-left: 200px; margin-top: -10px;" >
+        </a>
+        <!-- the navbar tab code is this -->
+        <div class="ul">
+          <ul class="nav nav-underline ul">
+            <li class="nav-item">
+              <a class="nav-link color" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="C:\Users\afsal\Desktop\bootstrap\beyond.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#">Placements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link color" href="#">Contact</a>
+            </li>
+          </ul>
+          </div>
+          </div>
+          </nav>
+          <div id="div1" class="container-sm" style="margin-left:700px; margin-top: 130px; width: 300px; font-family: century;">
+            <div>
+              <button class="btn2" type="submit" id="btn">Click here To Enter Detaila</button><br><br>
+            </div>
+              <div class="row" id="div2" style="display: none;">
+                <h2>How can we be of assistance?</h2>
+                <p>If you require clarifications on any of the courses or the admission process,<br> we are happy to help</p>
+
+                <div class="">
+                  <form>
+                    <div class="mb-3" style=" width: 400px;">
+
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3" style=" width:400px ; ">
+
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number" required>
+                    </div>
+                    <div class="mb-3" style=" width: 400px; ">
+
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email id" required>
+                    </div>
+                    <div class="mb-3" style=" width: 400px; ">
+
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="City" required>
+                    </div>
+                    <div class="mb-3" style=" width: 400px; ">
+
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email or phone number" required>
+                    </div>
+                    <div class="mb-3" style="width: 400px;">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Plese select course</option>
+                        <option value="1">Software Testing Specialist</option>
+                        <option value="2">MEA(R)N Stack Web Development Expert - Angular & React</option>
+                        <option value="3">Android Developer Expert Training In Kochi- Flutter</option>
+                        <option value="4">Data Science - ML - AI - Big Data with Cloud & Power BI</option>
+                        <option value="5">Python Django - Angular- Full Stack Web Development Expert</option>
+                        <option value="6">DATA SCIENCE - ML - AI - & PowerBI</option>
+                        <option value="7">Asp.net  MVC with Angular - Full Stack</option>
+                        <option value="8">Java Spring Full Stack Development</option>
+                        <option value="9"></option>
+                      </select>
+                    </div>
+                    <div class="mb-3" style="width: 400px;">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquiry/Message/Question" rows="3"></textarea>
+                    </div>
+                    <div style="margin-left: 250px;">
+                      <button type="button" class="btn">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+  </div>
+
+<style>
+    .ul{
+        margin-right: 260px;
+        font-size: 17px;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;;
+    }
+
+    .nav-link{
+        margin-right: 10px;
+        font-weight: bold;
+        color: rgb(51, 42, 42);
+    }
+
+    .color:hover{
+        color: rgb(54, 54, 153);
+    }
+
+    body{
+      background-image: url("{% static 'luminarback.jpg' %}");
+      background-size: cover;
+    }
+
+    .btn{
+      border: 2px solid #34b8ec;
+      border-radius: 30px;
+      padding: 12px 46px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .btn2{
+      border: 2px solid #e62727;
+      border-radius: 30px;
+      padding: 5px 46px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+     $(document).ready(function() {
+            $('#btn').click(function() {
+                $('#div2').fadeToggle('show');
+            });
+        });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+crossorigin="anonymous"></script>
+</body>
+</html>
